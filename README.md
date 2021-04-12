@@ -18,7 +18,7 @@ setup({
   plugins: {
     ...typography(),
     // Pass in the font metrics.
-    // Find the metrics for you font on https://seek-oss.github.io/capsize/
+    // Find the metrics for your font on https://seek-oss.github.io/capsize/
     'cap-main': twindPluginCapsize({
       capHeight: 1456,
       ascent: 1900,
