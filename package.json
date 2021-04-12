@@ -1,0 +1,32 @@
+{
+  "name": "twind-plugin-capsize",
+  "version": "0.0.1",
+  "repository": "git@github.com:DylanVann/twind-plugin-capsize.git",
+  "license": "MIT",
+  "author": "Dylan Vann <dylan@dylanvann.com>",
+  "sideEffects": false,
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "yarn build:esm && yarn build:cjs",
+    "build:esm": "esbuild src/index.ts --outdir=dist/esm --format=esm --sourcemap --minify",
+    "build:cjs": "esbuild src/index.ts --outdir=dist/cjs --format=cjs --sourcemap --minify",
+    "build:dts": "tsc"
+  },
+  "dependencies": {
+    "capsize": "^2.0.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.11.9",
+    "twind": "^0.16.11",
+    "typescript": "^4.2.4"
+  },
+  "peerDependencies": {
+    "twind": ">=0.16.11"
+  }
+}
