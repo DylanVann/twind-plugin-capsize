@@ -5,6 +5,7 @@
 ## Usage
 
 ```js
+import { setup } from 'twind'
 import { twindPluginCapsize } from 'twind-plugin-capsize'
 
 setup({
